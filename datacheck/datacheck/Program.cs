@@ -1,6 +1,8 @@
 ﻿using datacheck.Database;
 using datacheck.model;
 using HtmlAgilityPack;
+
+Console.ForegroundColor = ConsoleColor.DarkGreen;
 var context = new DataContext();
 
 Console.WriteLine("Adres Gir");
@@ -27,6 +29,8 @@ for (int i = 1; i <= pages; i++)
 
     HtmlNodeCollection hedefDiv = htmlBelgesi.DocumentNode.SelectNodes("//div[contains(@class, 'anabaslik1')]//a");
 
+
+
     foreach (var sec in hedefDiv)
     {
         Console.WriteLine(sec.GetAttributeValue("href",""));
@@ -36,11 +40,20 @@ for (int i = 1; i <= pages; i++)
 
         HtmlAgilityPack.HtmlDocument htmlBelgesiNew = new HtmlAgilityPack.HtmlDocument();
 
+
         htmlBelgesiNew.LoadHtml(await responsePage.Content.ReadAsStringAsync());
 
         var item = new item();
 
         HtmlNodeCollection resimEtiketi = htmlBelgesiNew.DocumentNode.SelectNodes("//div[@class='maincont alanim2']//img");
+
+        HtmlNodeCollection baslik = htmlBelgesiNew.DocumentNode.SelectNodes("//h1[@id='news-title']");
+
+        if (baslik != null)
+        {
+            string bas = baslik[0].InnerText.Trim();
+            Console.WriteLine(bas);
+        }
 
         if (resimEtiketi != null)
         {
