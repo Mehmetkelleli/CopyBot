@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pxC9zgNXVQxy44xIHi8uct3q0N7qjl3Q7kZs4E1CuKyaITlJiOoESAka5Vi0TzILow8TNuVlhxQneVfO9B0Xqw==",
+  "dgSpecHash": "48LlRQdb+BZprSgxu6sP867oHNqyohNvFdfKCUzd3aAbJYlnOKZcIJt8GBWAeLpS0SqG0Tw3Lp6elmCLTfiSVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kelle\\OneDrive\\Masaüstü\\copybot\\CopyBot\\datacheck\\datacheck\\datacheck.csproj",
+  "projectFilePath": "C:\\Users\\kelle\\OneDrive\\Masaüstü\\CopyBot\\CopyBot\\datacheck\\datacheck\\datacheck.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kelle\\.nuget\\packages\\htmlagilitypack\\1.11.54\\htmlagilitypack.1.11.54.nupkg.sha512",
     "C:\\Users\\kelle\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
